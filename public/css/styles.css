@@ -1,0 +1,136 @@
+body {
+	margin: 0;
+	font-family: 'roboto mono';
+	background: #000;
+}
+
+.Header {
+	height: 10vh;
+	background: teal;
+	color: white;
+	position: fixed;
+	width: 100vw;
+}
+
+.Main {
+	padding-top: 15vh;
+}
+
+.Footer {
+	height: 10vh;
+	background: #1A1A1A;
+	color: white;
+}
+
+.container {
+	width: 80vw;
+	margin: auto;
+	display: grid;
+	grid-gap: 1vw;
+	grid-template-columns: 22vw 54vw;
+}
+
+.top {
+	display: flex;
+	padding: 0 10vw; 
+	height: 10vh;
+	align-items: center;
+}
+
+.title {
+	flex-grow: 1;
+	color: white;
+	font-size: 150%;
+}
+
+.mainBox {
+	background: #fdfdfd;	
+	padding: 10px;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+	border-radius: 2px;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+
+	display: grid;
+	grid-gap: 1vw;
+
+	margin-bottom: 10px;
+}
+
+.file {
+	width: 120%;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+h4 {
+	text-align: center;
+}
+
+.welcome {
+	font-size: 20pt;
+	text-align: center;
+}
+.text {
+	font-size: 30pt;
+	text-align: center;
+}
+
+.leaderboard {
+	display: flex;
+	height: 150px;
+	flex-direction: column;
+}
+
+.score {
+	display: flex;
+}
+
+.codetitle {
+	flex-grow: 1;
+	font-size: 20pt;
+}
+
+.codescore {
+	font-size: 20pt;
+	color: green;
+}
+
+.ranklabel{
+	flex-grow: 1;
+	font-size : 25pt;
+	text-align: right;
+}
+
+.rank {
+	font-size: 40pt;
+	text-align: right;
+	color: green;
+}
+
+.fileupload {
+	position: fixed;
+}
+
+@media screen and (max-width:1000px){
+	.container{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.fileupload {
+		position: static;
+	}
+
+	.result {
+		margin-top: 10px;
+	}
+
+	.file {
+		width: 100%;
+	}
+
+}

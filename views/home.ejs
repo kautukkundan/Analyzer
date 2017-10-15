@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="./css/materialize.min.css"  media="screen,projection"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+</head>
+<body>
+
+	<div class="Header">
+		<div class="top">
+
+			<div class="title">
+				BVPIEEE CS PORTAL
+			</div>
+
+			<div class="button"> 
+				<button class="btn waves-effect waves-light" type="submit" name="action">LOGOUT
+				</button>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="Main">
+		<div class="container auto-fill">
+
+			<div class="fileupload">
+				<div class="mainBox file">
+					<div>
+						<div class="welcome">WELCOME</div>
+						<div class="text">KAUTUK</div>
+					</div>
+					<a class="waves-effect waves-light btn" type="submit" name="upload">UPLOAD FILE</a>					
+				</div><br>
+
+				<div class="mainBox leaderboard file">
+
+					<div class="ranklabel">CURRENT RANK</div>
+					<div class="rank">3/40</div>
+					
+				</div>
+
+			</div>
+
+			<div></div>
+
+			<div class="result">
+
+				<div class="title"><h4>TRACK YOUR PROGRESS</h4></div><br><br>
+
+				<div class="scores">
+
+					<%for(var i = 0; i < 5 ; i++) {%>
+					<div class="mainBox score">
+						<div class="codetitle">THOR: THE DARK WORLD</div>
+						<div class="codescore">47/50</div>
+					</div>
+					<% } %>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+
+		</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="./js/materialize.min.js"></script>
+	</body>
+	</html>
