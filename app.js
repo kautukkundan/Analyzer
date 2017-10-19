@@ -12,6 +12,7 @@ app.set("view engine", "ejs");
 
 app.use(express.static("public"));
 
+// random line 
 app.get("/home", function (req, res) {
 	res.render("home");
 });

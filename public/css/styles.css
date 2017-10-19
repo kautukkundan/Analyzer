@@ -119,6 +119,17 @@ h4 {
 	position: fixed;
 }
 
+.footnote {
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+}
+
+p {
+	padding: 0;
+	margin: 0;
+}
+
 @media screen and (max-width:1000px){
 	.container{
 		display: flex;
